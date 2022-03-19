@@ -1,6 +1,8 @@
 import querystring from 'querystring';
 import { useAsync } from 'react-async';
 
+global.Buffer = global.Buffer || require('buffer').Buffer
+
 const client_id = "94a9fa1f778f458fa1bf75e229cc015f"
 const client_secret = "e5f46c6d00ba464ca3ff9274bfa614aa";
 //const refresh_token = process.env.SPOTIFY_REFRESH_TOKEN;
