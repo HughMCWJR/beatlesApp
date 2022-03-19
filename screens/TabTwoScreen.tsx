@@ -15,12 +15,16 @@ export default function TabTwoScreen() {
       <Text style={styles.title}>Gallery</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
       <View style={styles.flex}>
-        <Image style={styles.image} source="https://i.imgur.com/fioCAzl.jpeg"></Image>
-        <Image style={styles.image} source="https://i.imgur.com/fSoKiMS.png"></Image>
+        <Image style={styles.image} source={{
+          uri: "https://i.imgur.com/fioCAzl.jpeg"}}></Image>
+        <Image style={styles.image} source={{
+          uri: "https://i.imgur.com/fSoKiMS.png"}}></Image>
       </View>
       <View style={styles.flex}>
-        <Image style={styles.image} source="https://i.imgur.com/sK0T0tcb.jpg"></Image>
-        <Image style={styles.image} source="https://i.imgur.com/T9Cc1aGb.jpg"></Image>
+        <Image style={styles.image} source={{
+          uri: "https://i.imgur.com/sK0T0tcb.jpg"}}></Image>
+        <Image style={styles.image} source={{
+          uri: "https://i.imgur.com/T9Cc1aGb.jpg"}}></Image>
       </View>
     </View>
   );
@@ -45,8 +49,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   image: {
-    width: 400,
-    height: 400
+    width: "50%",
+    height: "100%",
   },
   flex: {
     flex: 1,
